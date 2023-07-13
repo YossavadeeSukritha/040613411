@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
-    opacity: 0.95;
+    opacity: 0.9;
 }
 
 .first h1{
@@ -22,7 +22,7 @@
 }
 
 .second{
-    background-color:rgb(240, 240, 240);
+    background-color:#ebffe0;
     padding-top: 1rem;
 }
 
