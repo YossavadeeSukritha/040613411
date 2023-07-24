@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+</head>
+
+<body>
+
+    <form action="LoginPage.html" method="get">
+        <label>1. ชื่อเต็ม/ย่อของสาขาวิชา</label><br><br>
+        <input type="text"  id="ชื่อสาขา" name="ชื่อสาขา" pattern="[A-Z a-z]+" ><br><br>
+        <label>2. จำนวนเงินที่โอน</label><br><br>
+        <input type="text"  id="เงิน" name="เงิน" ><br><br>
+        <label>3. อาหารที่ชื่นชอบ 5 ชนิดที่ชื่นชอบจากมากไปน้อย</label><br><br>
+        <input type="text"  id="อาหาร" name="อาหาร" ><br><br>
+        <label>4. ค่าไฟฟ้า 3 เดือนที่ผ่านมา</label><br><br>
+        <input type="search"  id="ไฟฟ้า" name="ไฟฟ้า" ><br><br>
+        <label>5. รหัสบัตรประชาชน</label><br><br>
+        <input type="text"  id="รหัสบัตรประชาชน" name="รหัสบัตรประชาชน" ><br><br>
+        <label>6. ความพึงพอใจของหนังสือเล่มนี้</label><br><br>
+        <input type="radio" id="มาก" name="มาก" value="มาก">
+        <label for="มาก">มาก</label>
+        <input type="radio" id="ปานกลาง" name="ปานกลาง" value="ปานกลาง">
+        <label for="ปานกลาง">ปานกลาง</label>
+        <input type="radio" id="น้อย" name="น้อย" value="น้อย">
+        <label for="น้อย">น้อย</label><br><br>
+        <label>7. อาการป่วย</label><br><br>
+        <input type="text"  id="อาการป่วย" name="อาการป่วย" ><br><br>
+        <label>8. ในช่วง 3 เดือนที่ผ่านมา เคยได้รับวัคซีนหรือไม่</label><br><br>
+        <input type="radio" id="เคย" name="เคย" value="เคย">
+        <label for="เคย">เคย</label>
+        <input type="radio" id="ไม่่เคย" name="ไม่่เคย" value="ไม่่เคย">
+        <label for="ไม่่เคย">ไม่เคย</label><br><br>
+        <label>9. รหัสผ่าน</label><br><br>
+        <input type="password"  id="รหัสผ่าน" name="รหัสผ่าน" ><br><br>
+        <label>10. เวลาเริ่มเข้าเรียนและสิ้นสุดการเรียน</label><br><br>
+        <label>เวลาเริ่มเข้าเรียน :</label>
+        <input type="time"  id="เวลาเข้าเรียน" name="เวลาเข้าเรียน" ><br><br>
+        <label>เวลาสิ้นสุดการเรียน :</label>
+        <input type="time"  id="เวลาเลิกเรียน" name="เวลาเลิกเรียน" ><br><br>
+        <label>11. วันเวลาที่ต้องไปพบแพทย์</label><br><br>
+        <input type="datetime-local"  id="วันเวลาที่ต้องไปพบแพทย์" name="วันเวลาที่ต้องไปพบแพทย์" ><br><br>
+    </form>
+
+</body>
+
+</html>
