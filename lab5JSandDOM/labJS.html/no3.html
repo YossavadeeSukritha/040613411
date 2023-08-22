@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script>
+        let student = [
+            {
+                fullname: 'นายตั้งใจ เรียนมาก',
+                age: 18,
+                year: 1,
+                gpa: 3.40,
+                help: true
+            },
+            {
+                fullname: 'นายส่งงาน ตลอดมา',
+                age: 19,
+                year: 2,
+                gpa: 3.00,
+                help: false
+            },
+            {
+                fullname: 'นางสาวใส่ใจ ดีงาม',
+                age: 20,
+                year: 3,
+                gpa: 2.90,
+                help: true
+            },
+            {
+                fullname: 'นางสาวเอ บี',
+                age: 21,
+                year: 3,
+                gpa: 2.70,
+                help: false
+            },
+            {
+                fullname: 'นายซี ดี',
+                age: 19,
+                year: 2,
+                gpa: 2.75,
+                help: false
+            },
+            {
+                fullname: 'นายอี ไม่เอฟ',
+                age: 18,
+                year: 1,
+                gpa: 3.25,
+                help: false
+            },
+            {
+                fullname: 'นางสาวจี เอช',
+                age: 21,
+                year: 3,
+                gpa: 2.75,
+                help: true
+            },
+        ]
+
+        for (let year = 1; year <= 4; year++) {
+            console.log("ชั้นปีที่ " + (year));
+            let hasScholarship = false;
+
+            for (let i = 0; i < student.length; i++) {
+                if (student[i].year === year && student[i].gpa > 3.20) {
+                    console.log(student[i].fullname + " " + "เนื่องจากเกรดเฉลี่ยถึงเกรณฑ์และยังช่วยงานภาควิชาด้วย");
+                    hasScholarship = true;
+                }
+
+                else if (student[i].year === year && student[i].year >= 2 && student[i].gpa >= 2.75 && student[i].help == true) {
+                    console.log(student[i].fullname + " " + "เนื่องจากเกรดเฉลี่ยถึงเกรณฑ์และยังช่วยงานภาควิชาด้วย");
+                    hasScholarship = true;
+                }
+            }
+
+            if (!hasScholarship) {
+                console.log("ไม่มี");
+            }
+        }
+    </script>
+</body>
+
+</html>
