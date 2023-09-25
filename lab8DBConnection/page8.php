@@ -1,0 +1,12 @@
+<html >
+<body>
+<?php
+    $message = "สวัสดี<br>";
+    echo $message;
+    $myName = 'aws';
+    $age = 43;
+?>
+ชื่่อ:<?= $myName?><br>
+อายุ: <?=$age?>
+</body>
+</html>
