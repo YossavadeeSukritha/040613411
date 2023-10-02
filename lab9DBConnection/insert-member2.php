@@ -9,7 +9,14 @@
     $stmt->bindParam(6, $_POST["email"]);
     $stmt->execute(); //เริ่มเพิ่มข้อมูล
     $username = $pdo->lastInsertId(); //ขอคีย์หลักที่เพิ่มสำเร็จ
-    header("location: detail.php?username=".$_POST['username']);
+    if($_FILES['image']['tmp_name']){
+        $target = './member_photo/'.$_POST["username"].'.jpg';
+        $upload = move_uploaded_file($_FILES['image']['tmp_name'],$target);
+
+        if($upload){
+            header("location: detail.php?username=".$_POST['username']);
+        }
+    }
 ?>
 <html>
 <head><meta charset="UTF-8"></head>

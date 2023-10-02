@@ -7,8 +7,12 @@
     $stmt->bindParam(4, $_POST["address"]);
     $stmt->bindParam(5, $_POST["mobile"]);
     $stmt->bindParam(6, $_POST["email"]);
-    $stmt->execute(); //เริ่มเพิ่มข้อมูล
-    $username = $pdo->lastInsertId(); //ขอคีย์หลักที่เพิ่มสำเร็จ
+    $stmt->execute();
+    $username = $pdo->lastInsertId();
+    if($_FILES['image']['tmp_name']){
+        $target = './member_photo/'.$_POST["username"].'.jpg';
+        $upload = move_uploaded_file($_FILES['image']['tmp_name'],$target);
+    }
 ?>
 <html>
 <head><meta charset="UTF-8"></head>
