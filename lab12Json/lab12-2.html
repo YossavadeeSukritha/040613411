@@ -11,7 +11,7 @@
 
             for (let i = 0; i < objectData.features.length; i++) {
                 if(objectData.features[i].properties.num_bed < 100){
-                    let content = 'ชื่อโรงพยาบาล' + objectData.features[i].properties.name + ': '
+                    let content = 'ชื่อโรงพยาบาล :' + objectData.features[i].properties.name 
                     content += '(' + objectData.features[i].properties.num_bed+ 'เตียง)'
 
                     let li = document.createElement('li')

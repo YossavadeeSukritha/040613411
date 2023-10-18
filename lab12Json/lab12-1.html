@@ -10,7 +10,7 @@
             let result = document.getElementById('result')
 
             for (let i = 0; i < objectData.features.length; i++) {
-                    let content = 'ชื่อโรงพยาบาล' + objectData.features[i].properties.name + ': '
+                    let content = 'ชื่อโรงพยาบาล :' + objectData.features[i].properties.name 
                     content += '(' + objectData.features[i].properties.num_bed+ 'เตียง)'
 
                     let li = document.createElement('li')
